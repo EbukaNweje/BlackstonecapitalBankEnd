@@ -1,5 +1,5 @@
 const Admin = require("../models/Admin");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const createError = require("../utilities/error");
 const jwt = require("jsonwebtoken")
 const {validationResult } = require('express-validator');

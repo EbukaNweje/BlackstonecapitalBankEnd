@@ -1,11 +1,12 @@
 const User = require("../models/User")
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const createError = require("../utilities/error");
 const jwt = require("jsonwebtoken")
 const {validationResult } = require('express-validator');
 const transporter = require("../utilities/email");
 // const otpGenerator = require('otp-generator');
 // const withdrawModel = require("../models/withdrawModel");
+
 
 
 exports.register = async (req, res, next)=>{
