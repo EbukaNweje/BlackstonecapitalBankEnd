@@ -18,17 +18,17 @@ app.use(fileUploader({
 }))
 app.use(cookkieParser())
 app.use(express.json());
-app.use(cors({origin: "*"}));
+// app.use(cors({origin: "*"}));
 
-app.use("/api", authRouter)
-app.use("/api", userRouter)
-app.use("/api", adminRouter)
-app.use("/api", depositRouter)
-app.use("/api", withdrawRouter)
-app.use("/api", historyRouter)
-app.use("/api", investRouter)
-app.use("/api", planRouter)
-app.use("/api", Wallet)
+app.use("/api", cors({origin:"*"}), authRouter)
+app.use("/api", cors({origin:"*"}), userRouter)
+app.use("/api", cors({origin:"*"}), adminRouter)
+app.use("/api", cors({origin:"*"}), depositRouter)
+app.use("/api", cors({origin:"*"}), withdrawRouter)
+app.use("/api", cors({origin:"*"}), historyRouter)
+app.use("/api", cors({origin:"*"}), investRouter)
+app.use("/api", cors({origin:"*"}), planRouter)
+app.use("/api", cors({origin:"*"}), Wallet)
 
 app.use((err, req, res, next)=>{
    const errorStatus = err.status || 500
