@@ -12,7 +12,7 @@ const planRouter = require("./routes/plansRouter")
 const Wallet = require("./routes/WalletRouter")
 const cors = require("cors");
 const app = express()
-app.use(cors("*"));
+app.use(cors({origin: "*"}));
 
 app.use(fileUploader({
     useTempFiles: true
