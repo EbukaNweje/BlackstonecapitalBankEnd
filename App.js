@@ -12,14 +12,13 @@ const planRouter = require("./routes/plansRouter")
 const Wallet = require("./routes/WalletRouter")
 const cors = require("cors");
 const app = express()
-app.use(cors({origin: "*"}));
 
 app.use(fileUploader({
     useTempFiles: true
 }))
 app.use(cookkieParser())
 app.use(express.json());
-
+app.use(cors({origin: "*"}));
 
 app.use("/api", authRouter)
 app.use("/api", userRouter)
