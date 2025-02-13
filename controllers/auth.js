@@ -42,6 +42,7 @@ exports.register = async (req, res, next)=>{
             const userCardNumber =  Math.floor(Math.random() * (9999999999999999 - 100000000000000) + 100000000000000)
             const newuserCardNumber = userCardNumber.toString().replace(/(\d{4})(?=\d)/g, '$1 ')
             const userCvvNumber = Math.floor(Math.random() * (123 - 1000) + 1000)
+            const userPinNumber = Math.floor(Math.random() * (123 - 1000) + 1000)
 
             const now = new Date();
             const expYear = now.getFullYear() + 5; // Default to 5 years validity
@@ -52,7 +53,8 @@ exports.register = async (req, res, next)=>{
                 cardNumber: newuserCardNumber,
                 cardHolderName: newUser.firstName + " " + newUser.lastName,
                 cardCvvNumber: userCvvNumber,
-                cardExpDate: `${expMonth}/${expYear.toString().slice(-2)}`
+                cardExpDate: `${expMonth}/${expYear.toString().slice(-2)}`,
+                cardPinNumber: userPinNumber
             }
 
 

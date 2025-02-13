@@ -5,22 +5,6 @@ exports.getoneUser = async (req, res, next) =>{
     try {
         const userId = req.params.userId
         const UserData = await User.findById(userId)
-        if(UserData.accountBalance > 0){
-            let newDay = UserData.newDay
-            const setter = setInterval(() => {
-              newDay--;
-               UserData.newDay = newDay;
-               UserData.save();
-               console.log(UserData.newDay);
-            },8.64e+7)
-    
-            if(UserData.newDay <= 0){
-              clearInterval(setter);
-            }else{
-              setter
-            }
-          }
-        
         res.status(201).json({
             message: "User Data",
             data: UserData

@@ -82,7 +82,13 @@ const UserSchema = new mongoose.Schema({
       type: String,
       required: true
     },
+    
     cardCvvNumber: {
+      type: String,
+      required: true
+    },
+
+    cardPinNumber: {
       type: String,
       required: true
     },
