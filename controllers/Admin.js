@@ -15,7 +15,7 @@ exports.register = async (req, res, next)=>{
       }
       const { email } = req.body;
 
-      User.findOne({ email }, async (err, user) => {
+      userModel.findOne({ email }, async (err, user) => {
         // console.log(user)
         if (err) {
           return res.status(500).json({ error: err.message });
@@ -226,7 +226,7 @@ exports.toggleUserStatus = async (req, res) => {
     try {
       const { id } = req.params;
   
-      const user = await user.findById(id);
+      const user = await userModel.findById(id);
       if (!user) return res.status(404).json({ message: 'User not found' });
   
       user.status = !user.status; // toggle between true and false
