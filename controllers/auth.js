@@ -80,7 +80,7 @@ exports.login = async (req, res, next)=>{
 
         const isPasswordCorrect = await bcrypt.compare(req.body.password, Users.password)
         if(!isPasswordCorrect) return next(createError(400, "Wrong password or username"))
-        if (!Users.status) {
+        if (Users.status) {
                 return res.status(403).json({ message: 'User is suspended. Contact support.' });
           }
         
