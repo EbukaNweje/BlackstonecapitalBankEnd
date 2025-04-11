@@ -15,7 +15,7 @@ exports.register = async (req, res, next)=>{
       }
       const { email } = req.body;
 
-      User.findOne({ email }, async (err, user) => {
+        const user = await Admin.findOne({ email }, async (err, user) => {
         // console.log(user)
         if (err) {
           return res.status(500).json({ error: err.message });
@@ -37,7 +37,7 @@ exports.register = async (req, res, next)=>{
          await newUser.save()
 
          res.status(201).json({
-            message: "User has been created.",
+            message: "Admin has been created.",
             data: newUser
         })
         }
@@ -221,3 +221,20 @@ exports.addProfit = async (req, res) => {
     }
 };
 
+exports.toggleUserStatus = async (req, res) => {
+    try {
+      const { id } = req.params;
+  
+      const user = await userModel.findById(id);
+      if (!user) return res.status(404).json({ message: 'User not found' });
+  
+      user.status = !user.status; // toggle between true and false
+      await user.save();
+  
+      const statusMessage = user.status ? 'User suspended' : 'User activated' ;
+      res.status(200).json({ message: statusMessage, userStatus: user.status });
+    } catch (err) {
+      res.status(500).json({ message: 'Something went wrong', error: err.message });
+    }
+  };
+  

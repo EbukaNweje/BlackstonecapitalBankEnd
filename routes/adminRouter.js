@@ -5,6 +5,6 @@ const { confirmDeposit, confirmWithdraw, addProfit, toggleUserStatus } = require
 router.post('/confirm-deposit/:depositId', confirmDeposit)
 router.post('/confirm-withdrawal/:withdrawId', confirmWithdraw)
 router.post('/add-profit/:id', addProfit)
-// router.put('/user/:id/status-toggle', toggleUserStatus)
+router.put('/user/:id/status-toggle', toggleUserStatus)
 
 module.exports = router
