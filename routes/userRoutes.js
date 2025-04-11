@@ -2,6 +2,7 @@ const express = require("express")
 const ReqAccount = require("../controllers/Account")
 const UserData = require("../controllers/User")
 const ContactsData = require("../controllers/Contacts")
+const TransferController = require("../controllers/TransferControllers")
 
 const Routers = express.Router()
 
@@ -28,6 +29,8 @@ Routers.route('/getallinvestmentplan/:id').get(UserData.getAllUserInvestments)
 Routers.route('/getallinterest/:userId').get(UserData.getUserInterests)
 Routers.route('/getalltransactions/:id').get(UserData.getAllTransactions)
 Routers.route('/getalluserplan/:id').get(UserData.getAllUserInvestmentPlans)
+Routers.route('/send-otp/:id').post(TransferController.sendOtp)
+Routers.route('/vrify-otp-and-create-transfer/:id').post(TransferController.verifyOTPandcreateTransfer)
 
 
 

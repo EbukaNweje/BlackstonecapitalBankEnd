@@ -121,6 +121,17 @@ status: {
      ref: "admin"
   },
 
+  otpStore: [{
+    otp: {
+      type: String,
+      required: true,
+    },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
+  }],
+
   Transactions: {
     deposits: [{
         type: mongoose.Schema.Types.ObjectId,
@@ -128,7 +139,7 @@ status: {
     }],
     transfar: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'withdraw'
+        ref: 'Transfar'
     }],
 },
 
