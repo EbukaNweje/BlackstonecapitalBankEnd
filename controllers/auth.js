@@ -80,6 +80,10 @@ exports.login = async (req, res, next)=>{
 
         const isPasswordCorrect = await bcrypt.compare(req.body.password, Users.password)
         if(!isPasswordCorrect) return next(createError(400, "Wrong password or username"))
+        if (!Users.status) {
+                return res.status(403).json({ message: 'User is suspended. Contact support.' });
+          }
+        
 
         const logintoken = jwt.sign({id:Users._id, isAdmin:Users.isAdmin}, process.env.JWT, {expiresIn: "1d"})
         await Users.save()
@@ -794,6 +798,7 @@ exports.restLink = async (req, res, next) => {
       .redirect(`https://swifteatrn-prime-dash-board.vercel.app/#/reset-password/${id}/${token}`)
     }catch(err){next(err)}
   }
+
 
 
 exports.forgotPassword = async (req, res, next) => {
