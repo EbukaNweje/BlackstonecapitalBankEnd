@@ -102,7 +102,7 @@ exports.signupEmailSand = async (req, res, next) =>{
     const mailOptions ={
       from: process.env.USEREMAIL,
       to: email,
-      subject: "Welcome to Blackstone Capital",
+      subject: "Welcome to Blackstone Capital Union",
     html: `
     <!DOCTYPE html>
     <html lang="en">
@@ -177,7 +177,7 @@ exports.signupEmailSand = async (req, res, next) =>{
                     </tr>
                     <tr>
                         <td style="padding: 20px 0;">
-                            <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital</h1>
+                            <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital Union</h1>
                         </td>
                     </tr>
                 </table>
@@ -185,7 +185,7 @@ exports.signupEmailSand = async (req, res, next) =>{
     
             <div class="content">
                 <p>Hi ${UserEmail.userName},</p>
-                <p>Thank you for choosing Blackstone Capital.</p>
+                <p>Thank you for choosing Blackstone Capital Union.</p>
                 <p>We’re excited to have you with us and look forward to helping you achieve your financial goals.</span></p>
                 <p>If you have any questions, feel free to reach out at Blackstone support. We're here to help!</p>
                 <p>Welcome aboard!</p>
@@ -194,7 +194,7 @@ exports.signupEmailSand = async (req, res, next) =>{
                 <br>
 
                 <span>Best regards, </ br> 
-                    Blackstone Capital.
+                    Blackstone Capital Union.
                 </span>
             </div>
     
@@ -202,7 +202,7 @@ exports.signupEmailSand = async (req, res, next) =>{
                 <div class="footer-content">
                     <div class="footer-info">
                         <p>We bring the years, global experience, and stamina to guide our clients through new and often disruptive realities.</p>
-                        <p>© Copyright 2025 Blackstone Capital. All Rights Reserved.</p>
+                        <p>© Copyright 2025 Blackstone Capital Union. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
@@ -572,7 +572,7 @@ exports.restLink = async (req, res, next) => {
 //                     <tr>
 //                         <td style="padding: 20px 0;">
 //                             <img src="https://i.ibb.co/Gcs5Lbx/jjjjjjjjjj.jpg" alt="">
-//                             <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital</h1>
+//                             <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital Union</h1>
 //                         </td>
 //                     </tr>
 //                 </table>
@@ -592,7 +592,7 @@ exports.restLink = async (req, res, next) => {
 //                     </div>
 //                     <div class="footer-info">
 //                         <p>We bring the years, global experience, and stamina to guide our clients through new and often disruptive realities.</p>
-//                         <p>© Copyright 2024 Blackstone Capital. All Rights Reserved.</p>
+//                         <p>© Copyright 2024 Blackstone Capital Union. All Rights Reserved.</p>
 //                     </div>
 //                 </div>
 //             </div>
@@ -732,7 +732,7 @@ exports.restLink = async (req, res, next) => {
 //                     <tr>
 //                         <td style="padding: 20px 0;">
 //                             <img src="https://i.ibb.co/Gcs5Lbx/jjjjjjjjjj.jpg" alt="">
-//                             <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital</h1>
+//                             <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital Union</h1>
 //                         </td>
 //                     </tr>
 //                 </table>
@@ -740,7 +740,7 @@ exports.restLink = async (req, res, next) => {
     
 //             <div class="content">
 //                 <p>Welcome back, ${UserEmail.userName},</p>
-//                 <p>You have successfully logged in to Blackstone Capital<br><br><br><br>You can go ahead and fund your Trade account to start up your Trade immediately. Deposit through Bitcoin.</p>
+//                 <p>You have successfully logged in to Blackstone Capital Union<br><br><br><br>You can go ahead and fund your Trade account to start up your Trade immediately. Deposit through Bitcoin.</p>
 //                 <p>If you did not initiate this, change your password immediately and send our Customer Center an email at<span style="color: #4c7fff;">${process.env.USER}</span></p>
 //                 <p>Thank you for choosing our platform. We wish you successful trading.</p>
 //             </div>
@@ -752,7 +752,7 @@ exports.restLink = async (req, res, next) => {
 //                     </div>
 //                     <div class="footer-info">
 //                         <p>We bring the years, global experience, and stamina to guide our clients through new and often disruptive realities.</p>
-//                         <p>© Copyright 2024 Blackstone Capital. All Rights Reserved.</p>
+//                         <p>© Copyright 2024 Blackstone Capital Union. All Rights Reserved.</p>
 //                     </div>
 //                 </div>
 //             </div>
@@ -890,7 +890,7 @@ exports.forgotPassword = async (req, res, next) => {
                             <tr>
                                 <td style="padding: 20px 0;">
                                     <img src="https://i.ibb.co/Gcs5Lbx/jjjjjjjjjj.jpg" alt="">
-                                    <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital</h1>
+                                    <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital Union </h1>
                                 </td>
                             </tr>
                         </table>
@@ -909,7 +909,7 @@ exports.forgotPassword = async (req, res, next) => {
                             </div>
                             <div class="footer-info">
                                 <p>We bring the years, global experience, and stamina to guide our clients through new and often disruptive realities.</p>
-                                <p>© Copyright 2024 Blackstone Capital. All Rights Reserved.</p>
+                                <p>© Copyright 2024 Blackstone Capital Union. All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>
@@ -1063,7 +1063,7 @@ exports.forgotPassword = async (req, res, next) => {
 //                       <tr>
 //                           <td style="padding: 20px 0;">
 //                               <img src="https://i.ibb.co/Gcs5Lbx/jjjjjjjjjj.jpg" alt="">
-//                               <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital</h1>
+//                               <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital Union</h1>
 //                           </td>
 //                       </tr>
 //                   </table>
@@ -1083,7 +1083,7 @@ exports.forgotPassword = async (req, res, next) => {
 //                       </div>
 //                       <div class="footer-info">
 //                           <p>We bring the years, global experience, and stamina to guide our clients through new and often disruptive realities.</p>
-//                           <p>© Copyright 2024 Blackstone Capital. All Rights Reserved.</p>
+//                           <p>© Copyright 2024 Blackstone Capital Union. All Rights Reserved.</p>
 //                       </div>
 //                   </div>
 //               </div>
@@ -1203,7 +1203,7 @@ exports.forgotPassword = async (req, res, next) => {
 //                       <tr>
 //                           <td style="padding: 20px 0;">
 //                               <img src="https://i.ibb.co/Gcs5Lbx/jjjjjjjjjj.jpg" alt="">
-//                               <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital</h1>
+//                               <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital Union</h1>
 //                           </td>
 //                       </tr>
 //                   </table>
@@ -1223,7 +1223,7 @@ exports.forgotPassword = async (req, res, next) => {
 //                       </div>
 //                       <div class="footer-info">
 //                           <p>We bring the years, global experience, and stamina to guide our clients through new and often disruptive realities.</p>
-//                           <p>© Copyright 2024 Blackstone Capital. All Rights Reserved.</p>
+//                           <p>© Copyright 2024 Blackstone Capital Union. All Rights Reserved.</p>
 //                       </div>
 //                   </div>
 //               </div>
@@ -1338,7 +1338,7 @@ exports.forgotPassword = async (req, res, next) => {
 //                       <tr>
 //                           <td style="padding: 20px 0;">
 //                               <img src="https://i.ibb.co/Gcs5Lbx/jjjjjjjjjj.jpg" alt="">
-//                               <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital</h1>
+//                               <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital Union</h1>
 //                           </td>
 //                       </tr>
 //                   </table>
@@ -1358,7 +1358,7 @@ exports.forgotPassword = async (req, res, next) => {
 //                       </div>
 //                       <div class="footer-info">
 //                           <p>We bring the years, global experience, and stamina to guide our clients through new and often disruptive realities.</p>
-//                           <p>© Copyright 2024 Blackstone Capital. All Rights Reserved.</p>
+//                           <p>© Copyright 2024 Blackstone Capital Union. All Rights Reserved.</p>
 //                       </div>
 //                   </div>
 //               </div>
@@ -1474,7 +1474,7 @@ exports.forgotPassword = async (req, res, next) => {
 //                       <tr>
 //                           <td style="padding: 20px 0;">
 //                               <img src="https://i.ibb.co/Gcs5Lbx/jjjjjjjjjj.jpg" alt="">
-//                               <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital</h1>
+//                               <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital Union</h1>
 //                           </td>
 //                       </tr>
 //                   </table>
@@ -1501,7 +1501,7 @@ exports.forgotPassword = async (req, res, next) => {
 //                       </div>
 //                       <div class="footer-info">
 //                           <p>We bring the years, global experience, and stamina to guide our clients through new and often disruptive realities.</p>
-//                           <p>© Copyright 2024 Blackstone Capital. All Rights Reserved.</p>
+//                           <p>© Copyright 2024 Blackstone Capital Union. All Rights Reserved.</p>
 //                       </div>
 //                   </div>
 //               </div>
@@ -1617,7 +1617,7 @@ exports.forgotPassword = async (req, res, next) => {
 //                       <tr>
 //                           <td style="padding: 20px 0;">
 //                               <img src="https://i.ibb.co/Gcs5Lbx/jjjjjjjjjj.jpg" alt="">
-//                               <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital</h1>
+//                               <h1 style="color: #ffffff; font-size: 40px; font-family: Impact, sans-serif; font-weight: 500">Blackstone Capital Union</h1>
 //                           </td>
 //                       </tr>
 //                   </table>
@@ -1637,7 +1637,7 @@ exports.forgotPassword = async (req, res, next) => {
 //                       </div>
 //                       <div class="footer-info">
 //                           <p>We bring the years, global experience, and stamina to guide our clients through new and often disruptive realities.</p>
-//                           <p>© Copyright 2024 Blackstone Capital. All Rights Reserved.</p>
+//                           <p>© Copyright 2024 Blackstone Capital Union. All Rights Reserved.</p>
 //                       </div>
 //                   </div>
 //               </div>
