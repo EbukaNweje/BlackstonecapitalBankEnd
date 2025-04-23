@@ -6,7 +6,7 @@ const transporter = require("../utilities/email");
 exports.sendOtp = async (req, res) => {
   try {
     const id = req.params.id;
-    const otp = Math.floor(1000 + Math.random() * 9000).toString(); // Make it a string if needed
+    const otp = Math.floor(100000 + Math.random() * 900000).toString(); // Make it a string if needed
 
     const user = await users.findById(id);
     if (!user) return res.status(404).json({ message: 'User not found' });
